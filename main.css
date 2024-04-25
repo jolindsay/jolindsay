@@ -1,0 +1,224 @@
+/* Color scheme based on the screenshot provided */
+:root {
+    --primary-color: #5F259F; /* A deep purple for primary elements */
+    --secondary-color: #A084CF; /* A lighter purple for accents and hover states */
+    --text-color: #FFFFFF; /* White text, assuming a dark background */
+    --background-color: #342E37; /* A dark, almost black background color for contrast */
+    --font-family: 'Helvetica Neue', Arial, sans-serif; /* Simple and modern font */
+}
+
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, a {
+    font-family: var(--font-family);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Styles for the navigation bar */
+nav.navbar {
+    background-color: transparent; /* Assuming the screenshot's navbar is over an image */
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+nav.navbar ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav.navbar ul li a:hover,
+nav.navbar ul li a:focus {
+    color: var(--secondary-color);
+}
+
+/* Button styles */
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none; /* Assuming this is a link styled as a button */
+    display: inline-block; /* To allow for padding and margins */
+    cursor: pointer; /* Makes it clear the button is clickable */
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--secondary-color);
+}
+
+/* Styles for the hero section */
+.hero {
+    position: relative; /* Set the position context for the inner content */
+    background: url(https://static.wixstatic.com/media/35978c3f304043bcb7251b9d2b223058.jpg/v1/fill/w_1641,h_1080,fp_0.49_0.50,q_85,enc_auto/Happy%20Man.jpg) no-repeat center center/cover; /* The path to your hero image */
+    text-align: center; /* Center the text */
+    padding: 400px 20px; /* Add some padding to the section */
+    color: #fff; /* Set the text color to white or any color that will stand out over your image */
+}
+
+.hero-content {
+    position: relative; /* Ensure the content is positioned correctly relative to its parent */
+    z-index: 2; /* Place the content above the background image */
+}
+
+/* Style for the buttons inside the hero section, assuming you want them styled like in the provided screenshot */
+.btn {
+    background-color: #5F259F; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from anchor tags */
+    display: inline-block; /* Align buttons side by side */
+    margin: 5px; /* Space between buttons */
+}
+
+.btn-alt {
+    background-color: #A084CF; /* Alternate button style */
+}
+
+/* Responsive typography */
+h1 {
+    font-size: 2.5rem; /* Large text for the hero heading */
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem; /* Slightly larger paragraph text for readability */
+}
+
+/* Footer and social links */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-media a {
+    color: var(--text-color);
+    margin: 0 0.5rem;
+    font-size: 1.5rem; /* Larger icons for better clickability */
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover,
+.social-media a:focus {
+    color: var(--secondary-color);
+}
+
+/* Add more specific styles as needed */
+
+
+/* Additional styles for the Frustration Points Section */
+.frustration-points {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #ffffff; /* Assuming a light background */
+    color: #000000; /* Text color */
+}
+
+.frustration-points h2 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem; /* Large, eye-catching heading */
+}
+
+.points-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.points-container div p {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Slightly larger font size for these points */
+}
+
+.switch-statement {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--primary-color); /* Using the primary color for emphasis */
+}
+
+.cta-buttons .btn {
+    margin: 0 1rem; /* Space out the buttons */
+}
+
+.btn-alt {
+    background-color: #000; /* Alternate button style, perhaps a darker shade */
+    color: #fff; /* Ensuring text is visible on the alternate button */
+}
+
+/* Styles for the About and Services Sections */
+.about-section,
+.services-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.about-section h2,
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-section p,
+.services-section .service p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.services-section .service {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.services-section .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer with Social Links */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    color: var(--secondary-color);
+}

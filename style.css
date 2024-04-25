@@ -1,0 +1,99 @@
+/* Root variables */
+:root {
+    --primary-color: #5F259F; /* Purple shade for primary elements */
+    --secondary-color: #A084CF; /* Lighter purple for hover effects */
+    --text-color: #ffffff; /* Adjusted to white for better contrast on the dark navbar */
+    --nav-background-color: #342E37; /* Dark background for navbar */
+    --font-family: 'Arial', sans-serif; /* Simple and readable font */
+    --link-hover-color: #D3BFD9; /* A lighter shade of purple for hover effects */
+}
+
+/* Body styling */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Maintaining a white background for the body */
+}
+
+/* General navbar styling */
+.navbar {
+    background-color: var(--nav-background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Brand title style */
+.navbar .brand-title {
+    color: var(--primary-color);
+    font-size: 2rem; /* Increased size for better visibility */
+    text-transform: uppercase; /* Optional: making the title uppercase for a more professional look */
+    font-weight: bold;
+}
+
+/* Navbar links styling */
+.navbar .navbar-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar .navbar-links li {
+    padding: 0 1rem;
+}
+
+.navbar .navbar-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* Change link color on hover */
+.navbar .navbar-links li a:hover,
+.navbar .navbar-links li a:focus {
+    color: var(--link-hover-color);
+}
+
+/* Section titles */
+h2 {
+    color: var(--nav-background-color); /* A dark color for headings */
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    text-align: center; /* Center align all h2 elements */
+}
+
+/* Calendly Widget Styling */
+.calendly-widget-container {
+    padding: 3rem;
+    background: #fafafa; /* A very light gray background */
+    border-top: 3px solid var(--primary-color); /* Top border for a touch of color */
+}
+
+.calendly-inline-widget {
+    max-width: 768px; /* Set a max-width for larger screens */
+    height: 700px; /* Set a fixed height */
+    margin: 0 auto; /* Centering the widget */
+}
+
+/* Responsive Navbar adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar .navbar-links {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .navbar .navbar-links li {
+        width: 100%; /* Full width links for mobile */
+        text-align: center; /* Center the text for the links */
+    }
+    
+    .calendly-inline-widget {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow the widget to adjust in height as needed */
+    }
+}

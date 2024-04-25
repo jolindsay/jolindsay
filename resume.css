@@ -1,0 +1,153 @@
+/* General Styling */
+body, h1, h2, h3, p, blockquote, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #5F259F;
+    text-decoration: none;
+}
+
+/* Container for the whole resume for better control */
+.resume-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.resume-header {
+    display: flex;
+    align-items: center;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color: #5F259F;
+    padding: 40px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-right: 20px;
+}
+
+.header-text h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #c4c4c4;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #5F259F;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+/* Experience Cards */
+.job-card {
+    background-color: #2b2b2b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #5F259F;
+}
+
+.job-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.job-card .date {
+    font-style: italic;
+    color: #666;
+}
+
+/* Skills */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills li {
+    background-color: #323232;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+/* Podcast Section */
+.podcast {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #c9c9c9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .resume-container {
+        width: 90%;
+    }
+
+    .skills ul {
+        justify-content: space-between;
+    }
+
+    .skills li {
+        margin: 5px 0; /* Stack the skills vertically on smaller screens */
+    }
+
+    .resume-header, .job-card, section {
+        text-align: center;
+    }
+
+    .resume-header {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+}
+
